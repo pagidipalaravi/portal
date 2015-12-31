@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <af:pageTemplateDef var="attrs" definition="private">
+        <af:xmlContent>
+            <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
+                <description/>
+                <display-name>respPT</display-name>
+                <facet>
+                    <facet-name>
+                        center
+                    </facet-name>
+                </facet>
+            </component>
+        </af:xmlContent>
+        <af:resource type="css" source="/resources/css/respSkin.css"/>
+        <af:panelGroupLayout id="pt_pgl_one" layout="vertical" styleClass="pt-pgl-one">
+        
+            <af:panelGroupLayout id="pt_pgl_two" layout="vertical" styleClass="pt-pgl-two">
+                <af:panelGroupLayout id="pt_pgl_three" layout="vertical">
+                     
+                <af:panelGroupLayout id="pt_header" styleClass="pt-pgl-header" layout="vertical">
+                    <af:panelGroupLayout id="pt_pgl6" styleClass="pt-pgl-float" layout="vertical"/>
+                    <af:panelGroupLayout id="pt_pgl7" styleClass="pt-pgl-float" layout="vertical"/>
+                    <af:panelGroupLayout id="pt_pgl4" styleClass="pt-pgl-float" layout="vertical"/>
+                </af:panelGroupLayout>
+                    
+                    <af:panelGroupLayout id="pt_center" styleClass="pt-pgl-center" layout="vertical">
+                        <af:facetRef facetName="center"/>
+                    </af:panelGroupLayout>
+                    
+                <af:panelGroupLayout id="pt_footer" styleClass=".pt-pgl-footer" layout="vertical">
+                        <af:panelGroupLayout id="pt_pgl5" styleClass="pt-pgl-float" layout="vertical"/>
+                        <af:panelGroupLayout id="pt_pgl8" styleClass="pt-pgl-float" layout="vertical"/>
+                        <af:panelGroupLayout id="pt_pgl9" styleClass="pt-pgl-float" layout="vertical"/>
+                    </af:panelGroupLayout>
+                   
+                </af:panelGroupLayout>
+                </af:panelGroupLayout>
+        </af:panelGroupLayout>
+    </af:pageTemplateDef>
+</jsp:root>

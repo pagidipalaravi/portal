@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.pt-pgl-float{
+    float : left;
+    height :100px;
+    width : 300px;
+}
+/* Total screen px is 750 , in that for header and footer we are giving 100px and for center we are giving 80% px */
+.pt-pgl-header{
+    height:104px;
+}
+.pt-pgl-center{
+    height:500px;
+}
+.pt-pgl-footer{
+    height:104px;
+}

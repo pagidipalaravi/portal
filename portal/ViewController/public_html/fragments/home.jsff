@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <af:panelGroupLayout id="pgl1" layout="vertical">
+  <af:panelGroupLayout id="pgl_nav" layout="vertical" inlineStyle="float: left; width:200px;height:500px;" styleClass="pgl-nav">
+      <af:panelAccordion discloseMany="true" id="pa1" inlineStyle="width:200px;">
+        <af:showDetailItem id="pane1" text="Hrms">
+          <af:panelGroupLayout id="pgl3" layout="vertical">
+            <af:link text="Employees" id="employees" partialSubmit="true" partialTriggers="pgl_region"
+                     actionListener="#{pageFlowScope.DyanmicRegionBean.loadRegion}" immediate="true"/>
+            <af:link text="Departments" id="departments" partialSubmit="true" partialTriggers="pgl_region"
+                     actionListener="#{pageFlowScope.DyanmicRegionBean.loadRegion}" immediate="true" />
+            <af:link text="Locations" id="locations" partialSubmit="true" partialTriggers="pgl_region"
+                     actionListener="#{pageFlowScope.DyanmicRegionBean.loadRegion}" immediate="true"/>
+            <af:link text="Blank" id="l5"/>
+            <af:link text="Blank" id="l6"/>
+          </af:panelGroupLayout>
+        </af:showDetailItem>
+        <af:showDetailItem id="pane2" text="Self Services">
+          <af:panelGroupLayout id="pgl4" layout="vertical">
+            <af:link text="link 7" id="l7"/>
+            <af:link text="link 8" id="l8"/>
+            <af:link text="link 9" id="l9"/>
+            <af:link text="link 10" id="l10"/>
+            <af:link text="link 11" id="l11"/>
+          </af:panelGroupLayout>
+        </af:showDetailItem>
+        <af:showDetailItem id="pane3" text="Operations">
+          <af:panelGroupLayout id="pgl5" layout="vertical">
+            <af:link text="link 12" id="l12"/>
+            <af:link text="link 13" id="l13"/>
+            <af:link text="link 14" id="l14"/>
+            <af:link text="link 15" id="l15"/>
+            <af:link text="link 16" id="l16"/>
+          </af:panelGroupLayout>
+        </af:showDetailItem>
+        <af:showDetailItem id="pane4" text="Organizational Details">
+          <af:panelGroupLayout id="pgl6" layout="vertical">
+            <af:link text="link 17" id="l17"/>
+            <af:link text="link 18" id="l18"/>
+            <af:link text="link 19" id="l19"/>
+            <af:link text="link 20" id="l20"/>
+            <af:link text="link 21" id="l21"/>
+          </af:panelGroupLayout>
+        </af:showDetailItem>
+        <af:showDetailItem id="pane5" text="Specifications">
+          <af:panelGroupLayout id="pgl7" layout="vertical">
+            <af:link text="link 22" id="l22"/>
+            <af:link text="link 23" id="l23"/>
+            <af:link text="link 24" id="l24"/>
+            <af:link text="link 25" id="l25"/>
+            <af:link text="link 26" id="l26"/>
+          </af:panelGroupLayout>
+        </af:showDetailItem>
+      </af:panelAccordion>
+    </af:panelGroupLayout>
+    <af:panelGroupLayout id="pgl_region" layout="vertical" styleClass="pgl-region"
+                         inlineStyle="float:left;width:300px;height:500px;">
+      <af:panelGroupLayout id="pgl2" layout="vertical">
+        <af:region value="#{bindings.dynamicRegion1.regionModel}" id="r1"
+        binding= "#{pageFlowScope.DyanmicRegionBean.dynamicRichRegion}"/>
+      </af:panelGroupLayout>
+    </af:panelGroupLayout>
+  </af:panelGroupLayout>
+</jsp:root>
